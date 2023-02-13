@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/velhiec"
+        android:layout_marginTop="85dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:src="@drawable/idade"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/velhiceText"
+
+        android:layout_below="@+id/velhiec"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Velhice"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputIdade"
+        android:inputType="date"
+        style="@style/inputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/velhiceText"
+        android:layout_marginStart="20dp"
+        android:drawableRight="@drawable/baseline_calendar_month_24"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Data de nascimento" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_calcular"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/inputIdade"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Calcular"
+        android:textColor="@color/white" />
+
+    <View
+        android:id="@+id/viewCardResult"
+        style="@style/card"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/btn_calcular"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:id="@+id/text_Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_calcular"
+        android:layout_alignStart="@+id/viewCardResult"
+        android:layout_alignTop="@+id/viewCardResult"
+        android:layout_alignEnd="@+id/viewCardResult"
+        android:layout_alignBottom="@+id/viewCardResult"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+</RelativeLayout>

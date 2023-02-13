@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="inputStyle">
+            <item name="android:background">@drawable/bg_input</item>
+            <item name="android:textColorHint">@color/black</item>
+        <item name="android:padding">16dp</item>
+
+    </style>
+
+
+    <style name="button">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:padding">18dp</item>
+
+    </style>
+
+    <style name="card">
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:padding">18dp</item>
+
+    </style>
+
+</resources>

@@ -5,6 +5,7 @@
 </div>
 
 Projeto desenvolvido na segunda Aula da disciplina de Programação para Plataformas Móveis: Android e React native
+
 Usando Java!
 
 <div  align="center">
